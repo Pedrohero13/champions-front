@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.border-champion-legendary {
+  border: 3px solid orange;
+}
+.border-champion {
+  border: 2px solid yellow;
+}

@@ -1,0 +1,15 @@
+ {rarity ? <FilterRarity rarity={rarity}></FilterRarity> : <>
+        {faction ? <FilterFaction faction={faction}></FilterFaction> : <>
+          {element ? <FilterElement element={element}></FilterElement> : <>
+            {type ? <FilterType type={type}></FilterType> : <>
+            {skip ? <Skip skip={skip}></Skip> : <>
+            {limit ? <Limit limit={limit}></Limit> : <>
+            {isView ? <ViewAll limit={limit}></ViewAll> : <h3 className='text-center'>Select any filter</h3>}
+            </>}
+            </>}
+            </>}
+          </>}
+        </>}
+      </>
+      
+      }

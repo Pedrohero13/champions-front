@@ -8,7 +8,9 @@ import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-
+import {
+  BrowserRouter as Router,
+} from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const client = new ApolloClient({
@@ -16,11 +18,18 @@ const client = new ApolloClient({
   cache: new InMemoryCache()
 });
 root.render(
-  <React.StrictMode>
+
+  <React.StrictMode >
+
     <ApolloProvider client={client}>
-    <App />
-  </ApolloProvider>,
+      <Router>
+        <App />
+      </Router>
+
+    </ApolloProvider>,
   </React.StrictMode>
+
+
 );
 
 // If you want to start measuring performance in your app, pass a function

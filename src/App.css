@@ -36,14 +36,19 @@
     transform: rotate(360deg);
   }
 }
-
+.margin-to {
+  margin-top: 2em;
+}
 .border-champion-legendary {
-  border: 3px solid orange;
+  border: 4px solid orange;
 }
 .border-champion {
   border: 2px solid yellow;
 }
-
+.bg-gris{
+  background-color: rgb(74, 74, 74);
+  color: rgb(0, 0, 0);
+}
 .App{
   background-color: #282c34;
 }
